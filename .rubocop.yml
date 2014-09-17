@@ -1,0 +1,12 @@
+Documentation:
+  Enabled: false
+
+AllCops:
+  RunRailsCops: true
+  Include:
+    - Gemfile
+    - app/views/*
+    -lib/tasks/*
+  Exclude:
+    - db/schema.rb
+    - vendofr/**/*
