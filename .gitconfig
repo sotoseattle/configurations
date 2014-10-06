@@ -1,0 +1,34 @@
+[user]
+	name = Javier Soto
+	email = sotoseattle@gmail.com
+[color]
+	ui = true
+[github]
+	user  = fjs6
+	token = ac82760c75c527bd063e984daa818633
+[core]
+	excludesfile = /Users/fjs6/.gitignore
+	editor = subl -n -w
+	autocrlf = input
+[color]
+	ui = auto
+	iu =  auto
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[alias]
+	past = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	s = status -s
+	lg = log --oneline --decorate --all --graph
+	co = checkout
+	dsc = diff --staged
+[push]
+	default = simple
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[credential]
+	helper = osxkeychain
+[merge]
+	ff = false
